@@ -44,9 +44,10 @@
   main.addEventListener('click', function(event) {
     alert('I was clicked!');
   });
+  //input listener - prevent G key from ebing typed
+
   const input = document.querySelector('input')
- //input listener - prevent G key from ebing typed
-input.addEventListener('keydown', function(e) {
+ input.addEventListener('keydown', function(e) {
   if (e.key === "g") {
     return e.preventDefault()
   } else {
